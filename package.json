@@ -1,0 +1,26 @@
+{
+  "name": "three-react-mtl-loader",
+  "version": "1.0.0",
+  "description": "Three.js MTLLoader as an ES6 Module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucascassiano/three-react-mtl-loader.git"
+  },
+  "keywords": [
+    "three.js",
+    "MTLLoader",
+    "react",
+    "mtl",
+    "es6"
+  ],
+  "author": "lucascassiano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucascassiano/three-react-mtl-loader/issues"
+  },
+  "homepage": "https://github.com/lucascassiano/three-react-mtl-loader#readme"
+}
