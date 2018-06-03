@@ -1,10 +1,13 @@
 {
   "name": "three-react-mtl-loader",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Three.js MTLLoader as an ES6 Module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pretest": "eslint index.js",
+    "build": "rimraf lib && babel index.js --out-dir lib",
+    "git": "git add . && git commit -m \"new version (automatically generated)\" && git push origin master",
+    "release": "npm run git && npm run build && npm version patch  && npm publish"
   },
   "repository": {
     "type": "git",
@@ -22,5 +25,15 @@
   "bugs": {
     "url": "https://github.com/lucascassiano/three-react-mtl-loader/issues"
   },
-  "homepage": "https://github.com/lucascassiano/three-react-mtl-loader#readme"
+  "homepage": "https://github.com/lucascassiano/three-react-mtl-loader#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-latest": "^6.24.1",
+    "eslint": "^4.19.1",
+    "eslint-config-strongloop": "^2.1.0",
+    "jest": "^23.1.0",
+    "lint": "^1.1.2",
+    "rimraf": "^2.6.2"
+  }
 }

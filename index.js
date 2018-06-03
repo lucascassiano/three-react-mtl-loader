@@ -177,10 +177,10 @@ class MaterialCreator {
 
 		this.side = (this.options && this.options.side) ? this.options.side : THREE.FrontSide;
 		this.wrap = (this.options && this.options.wrap) ? this.options.wrap : THREE.RepeatWrapping;
-
+		this.crossOrigin = 'Anonymous';
 	}
 
-	crossOrigin = 'Anonymous';
+
 
 	setCrossOrigin(value) {
 
